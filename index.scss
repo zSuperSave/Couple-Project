@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
@@ -19,10 +19,10 @@ a {
   padding: 0 4rem;
   margin: 0 auto;
 }
-.content{
-    width: 100%;
-    height: 80%;
-    background: black;
+.content {
+  width: 100%;
+  height: 80%;
+  background: black;
 }
 .section {
   padding: 7rem 0;
@@ -58,7 +58,6 @@ nav .container {
   height: 100px;
   background-image: url("assets/pics/icon/Polar_Bear.png");
   background-size: cover;
-  
 }
 .links {
   background: #000;
@@ -79,7 +78,26 @@ nav .container {
   transition: 0.3s;
   color: white;
 }
+.links a.active {
+  background-color: var(--main-color);
+  color: var(--light-one);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.9rem 2.1rem;
+  margin-left: 1rem;
+}
 
+.links a:hover {
+  color: yellow;
+}
+
+.links a.active:hover {
+  color: var(--light-one);
+  background-color: #6b44e0;
+}
+nav.open .links {
+  transform: translateX(0);
+}
 /// display flex
 .flex-center {
   display: flex;

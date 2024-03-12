@@ -81,6 +81,28 @@ nav .container {
   color: white;
 }
 
+.links a.active {
+  background-color: var(--main-color);
+  color: var(--light-one);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.9rem 2.1rem;
+  margin-left: 1rem;
+}
+
+.links a:hover {
+  color: yellow;
+}
+
+.links a.active:hover {
+  color: var(--light-one);
+  background-color: #6b44e0;
+}
+
+nav.open .links {
+  transform: translateX(0);
+}
+
 .flex-center {
   display: flex;
   justify-content: center;

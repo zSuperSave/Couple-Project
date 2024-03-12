@@ -17,7 +17,7 @@
 
                     <!-- <img src="assets/pics/icon/Polar_Bear.png"> -->
                 </div>
-                <div class="links" >
+                <div class="links">
                     <ul>
                         <li>
                             <a href="#2020">2020</a>
@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                 </div>
-               
+
             </div>
         </nav>
     </header>
@@ -46,33 +46,51 @@
         <div class="container ">
             <div class="section-header ">2020</div>
             <div class="content">
-        </div>
+            </div>
     </section>
     <section class="section" id="2021">
         <div class="container">
             <div class="section-header ">2021</div>
             <div class="content">
-        </div>
+            </div>
     </section>
     <section class="section" id="2022">
         <div class="container">
             <div class="section-header ">2022</div>
             <div class="content">
-        </div>
+            </div>
     </section>
     <section class="section" id="2023">
         <div class="container">
             <div class="section-header ">2023</div>
             <div class="content">
-        </div>
+            </div>
     </section>
     <section class="section" id="2024">
         <div class="container">
             <div class="section-header ">2024</div>
             <div class="content">
-        </div>
+            </div>
     </section>
+    <script>
+   
+        function smoothScroll(target) {
+            const element = document.getElementById(target);
+            const position = element.offsetTop;
 
+            window.scrollTo({
+                top: position,
+                behavior: 'smooth' 
+            });
+        }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = this.getAttribute('href').substring(1); 
+                smoothScroll(target);
+            });
+        });
+    </script>
 </body>
 
 </html>
